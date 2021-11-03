@@ -5,13 +5,20 @@ import Link  from 'next/link';
 
 const Home: NextPage = () => {
   return (
-    <div className='bg-green-300'>
+    <div className="bg-green-500">
+      <head>
+        <title>
+          Home | Gestion de Proyectos
+        </title>
+      </head>
       <p>Pagina de Index</p>
-      <div>Esta es una prueba para el branch Development</div>
       <Link href='/admin/usuarios'>
       <a>Ir a Usuarios</a>
       </Link>
-    </div>
+      <div className='bg-green-400'>
+       <i className= 'fas fa-home' />
+      </div>
+      </div>
   )
 }
 
